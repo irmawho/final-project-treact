@@ -233,7 +233,7 @@ HEADER / ABOUT US ↓
 } */
 
 #landing {
-  padding:0;
+  padding: 0;
 }
 
 header .row {
@@ -892,7 +892,7 @@ TESTIMONIALS ↓
   height: 24px;
   background-color: #7c8ba1;
   margin: 0 12px;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .fa-arrow-left,
@@ -1375,6 +1375,11 @@ MOBILE RESPONSIVENESS ↓
   body {
     width: 100%;
   }
+  .footer__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .nav__logo {
     margin: 8px 0;
@@ -1449,7 +1454,9 @@ MOBILE RESPONSIVENESS ↓
   }
 
   .links {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap:0 100px;
     align-items: center;
     justify-content: center;
   }
@@ -1458,9 +1465,7 @@ MOBILE RESPONSIVENESS ↓
     text-align: center;
     justify-content: center;
   }
-  .links:last-child {
-    margin-left: 25%;
-  }
+
   footer {
     justify-content: center;
   }
@@ -1500,7 +1505,7 @@ MOBILE RESPONSIVENESS ↓
   }
   .aboutme__left {
     align-items: center;
-    margin:0;
+    margin: 0;
   }
   .aboutme__trustees--img,
   .aboutme__right {
@@ -1512,18 +1517,18 @@ MOBILE RESPONSIVENESS ↓
     margin: 10px;
   }
 
-#values {
-  padding:0;
-}
+  #values {
+    padding: 0;
+  }
 
-#pricing {
-  padding:0;
-}
-.plan {
-  margin:24px 0;
-}
+  #pricing {
+    padding: 0;
+  }
+  .plan {
+    margin: 24px 0;
+  }
 
-#testimonials {
-  padding: 0;
-}
+  #testimonials {
+    padding: 0;
+  }
 }
