@@ -474,7 +474,7 @@ QUALITY WORK ↓
   font-size: 48px;
   padding: 0;
   margin-top: 16px;
-  width: 90%;
+  width: 100%;
 }
 
 .quality__para {
@@ -1131,6 +1131,45 @@ footer {
 .copy__socials--link:hover {
   background-color: rgb(226, 232, 240);
   border: 2px solid rgb(226, 232, 240);
+}
+
+/* 
+
+ANIMATIONS ↓
+
+*/
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#testimonials,
+#quality,
+#start,
+#values,
+header,
+nav {
+  animation: fade-in-left 600ms ease;
+}
+
+#steps,
+#pricing,
+footer,
+#features {
+  animation: fade-in-right 600ms ease;
 }
 
 /* 
